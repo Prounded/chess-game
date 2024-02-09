@@ -2382,13 +2382,13 @@ function kingMovement(place){
         }
 
         if(castleMove){
-            if(boxes[62].firstElementChild.classList.contains('none') && boxes[61].firstElementChild.classList.contains('none')){
+            if(boxes[62].firstElementChild.classList.contains('none') && boxes[61].firstElementChild.classList.contains('none') && boxes[63].firstElementChild.classList.contains('white_Rock')){
                 if(!whiteKingMoved && !whiteRockRightMoved){
                     availableMove.push(boxes[62]);
                 }
             }
     
-            if(boxes[57].firstElementChild.classList.contains('none') && boxes[58].firstElementChild.classList.contains('none') && boxes[59].firstElementChild.classList.contains('none')){
+            if(boxes[57].firstElementChild.classList.contains('none') && boxes[58].firstElementChild.classList.contains('none') && boxes[59].firstElementChild.classList.contains('none') && boxes[56].firstElementChild.classList.contains('white_Rock')){
                 if(!whiteKingMoved && !whiteRockLeftMoved){
                     availableMove.push(boxes[58]);
                 }
@@ -2589,13 +2589,13 @@ function kingMovement(place){
         }
 
         if(castleMove){
-            if(boxes[6].firstElementChild.classList.contains('none') && boxes[5].firstElementChild.classList.contains('none')){
+            if(boxes[6].firstElementChild.classList.contains('none') && boxes[5].firstElementChild.classList.contains('none') && boxes[7].firstElementChild.classList.contains('black_Rock')){
                 if(!blackKingMoved && !blackRockRightMoved){
                     availableMove.push(boxes[6]);
                 }
             }
     
-            if(boxes[1].firstElementChild.classList.contains('none') && boxes[2].firstElementChild.classList.contains('none') && boxes[3].firstElementChild.classList.contains('none')){
+            if(boxes[1].firstElementChild.classList.contains('none') && boxes[2].firstElementChild.classList.contains('none') && boxes[3].firstElementChild.classList.contains('none') && boxes[0].firstElementChild.classList.contains('black_Rock')){
                 if(!blackKingMoved && !blackRockLeftMoved){
                     availableMove.push(boxes[2]);
                 }
